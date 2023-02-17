@@ -19,7 +19,7 @@
 
 <body>
 
-    <h1 class ="col text-center" onclick="changeBackground()" id="title">The Payne Search Engine</h1>
+    <h1 class="col text-center" onclick="changeBackground()" id="title">The Payne Search Engine</h1>
 
     <br />
 
@@ -61,6 +61,12 @@
             $('#time').dialog();
         }
 
+        function feelingLucky() {
+            /*var test = data.webPages.value[0].url;*/
+            $('#feelingLucky').html("<p>test</p>");
+            $('#feelingLucky').dialog();
+        }
+
     </script>
 
     <div class="col text-center">
@@ -73,12 +79,23 @@
         <button type="button" id="timeButton" class="btn btn-dark" onclick="displayTime()">Time</button>
     </div>
 
+    <br />
+
+    <div class="col text-center">
+        <!--<button type="button" id="luckyButton" class="btn btn-dark" onclick="location.href='https://w3docs.com';">I'm feeling lucky</button>-->
+        <button type="button" id="luckyButton" class="btn btn-dark" onclick=feelingLuckyJS()>I'm feeling lucky</button>
+    </div>
+
 
     <div id="searchResults">
 
     </div>
 
     <div id="time">
+
+    </div>
+
+    <div id="feelingLucky">
 
     </div>
 
